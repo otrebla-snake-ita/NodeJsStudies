@@ -1,0 +1,16 @@
+<html>
+<body>
+    <h1>
+        <!-- That syntax informs the rendering engine about where is dynamic code. In this case it looks for the variable "title" -->
+        Welcome to <%=title%>
+    </h1>
+
+    <ul>
+        <!-- This is javascript -->
+        <% data.map((i) => {
+            %><li><%=i%></li><%
+        })
+        %>
+    </ul>
+</body>
+</html>
